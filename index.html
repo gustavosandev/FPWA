@@ -38,7 +38,7 @@
 		        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="#">Link 1</a>
+		        <a class="nav-link" href="https://gustavosandev.github.io/dbusao/index.html">DBusao</a>
 		      </li>
 		      <li class="nav-item ">
 		        <a class="nav-link" href="#">Link 2 </a>
@@ -62,13 +62,13 @@
     	    </div>
     	 <!-- Aqui é o nosso botão para baixar o app -->
             <div class="row">
-	        	<div class="col">
+	        	<div class="col text-center">
 	        		<button class="add-button text-center">Baixe agora.</button>
 	        	</div>
 	        </div>
     	</div>   
     </section>
-    <footer class="fundo">
+    <footer class="fixed-bottom">
     	<div class="container-fluid">
     		<div class="row footer-color py-1">
     			<div class="col">
@@ -91,10 +91,10 @@
 	var cores = ['blue', 'red', 'yellow', 'pink', 'green', 'wheat'];
 
 	function mudarCor() {
-	  var trocar = document.getElementById('trocar');
+	  var trocarc = document.getElementById('trocar');
 	  var proximoIndex = Math.floor(Math.random() * cores.length);
 	  var cor = cores[proximoIndex];
-	  trocar.style.backgroundColor = cor;
+	  trocarc.style.backgroundColor = cor;
 	}
 </script>
 </html>
