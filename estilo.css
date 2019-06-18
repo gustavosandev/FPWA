@@ -38,6 +38,8 @@ pastel #CCB30A
 }
 footer{
 	background-color: #4371E8;
+  position: fixed;
+  position: bottom;
 }
 
 .add-button {
