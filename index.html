@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+		<title>FPWA</title>
+		<meta charset="utf-8">
+		<!-- Caminho do ícone -->
+		<link rel="icon" sizes="192x192" href="icon.png"> 
+		<!-- Hack para IOS - não testado -->
+		<link rel="apple-touch-icon" href="touch-icon-iphone.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="touch-icon-ipad.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="touch-icon-iphone-retina.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad-retina.png">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+		<!-- Tema que abrange a barra de endereço -->
+		<meta name="theme-color" content="#25EDFF">
+		<!-- Melhora o ranking acessibilidade -->
+		<meta name="Description" content="FrameWork PWA">	
+		<!-- Nossos códigos javascript -->
+		<script src="index.js" defer></script>
+		<!-- Caminho do nosso manifest, onde criamos nossas regras -->
+		<link rel="manifest" crossorigin="use-credentials" href="manifest.json">	
+  </head>
+  <body>
+  	<header>
+  		<nav class="navbar navbar-expand-lg navbar-light menu">
+		  <a class="navbar-brand" href="#">
+		    <img src="bus.png" width="35" height="35" alt="icone">
+		  </a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto">
+		      <li class="nav-item active">
+		        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Link 1</a>
+		      </li>
+		      <li class="nav-item ">
+		        <a class="nav-link" href="#">Link 2 </a>
+		      </li>
+		  </div>
+		</nav>
+  	</header>
+    <section class="container-fluid altura-minima">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col">
+    				<h4 class="alert-dark cinza text-center my-0 py-1">FPWA</h4>
+    	    	</div>
+    	    </div>
+    	    <div class="row my-5">
+    	    	<div class="col">
+    	    		<div class="altura-div" id="trocar" onClick="mudarCor()">
+    	    			<h2 class="text-center">Clique-me</h2>
+    	    		</div>
+    	    	</div>
+    	    </div>
+    	 <!-- Aqui é o nosso botão para baixar o app -->
+            <div class="row">
+	        	<div class="col">
+	        		<button class="add-button text-center">Baixe agora.</button>
+	        	</div>
+	        </div>
+    	</div>   
+    </section>
+    <footer >
+    	<div class="container-fluid">
+    		<div class="row footer-color py-1">
+    			<div class="col">
+    				<h6 class="text-center text-white">Em desenvolvimento - Alpha</h6>
+    				<h6 class="text-center text-white">Gustavo San Martins</h6>
+    			</div>
+    		</div>
+    	</div>
+    </footer>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+<script>
+  // Aqui vai a brincadeira de mudar cor a cada clique
+
+	var cores = ['blue', 'red', 'yellow', 'pink', 'green', 'wheat'];
+
+	function mudarCor() {
+	  var trocar = document.getElementById('trocar');
+	  var proximoIndex = Math.floor(Math.random() * cores.length);
+	  var cor = cores[proximoIndex];
+	  trocar.style.backgroundColor = cor;
+	}
+</script>
+</html>

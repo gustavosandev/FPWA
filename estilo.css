@@ -1,0 +1,47 @@
+@media all and (display-mode: fullscreen) {
+  body {
+    margin: 0;
+    border: 5px solid black;
+
+  }
+}
+
+/* rosa #FF40AE
+azul #25EDFF
+azul escuro #09A4B3
+pastel #CCB30A
+*/
+.altura-div{
+  min-height: 20vw;
+}
+.altura-minima{
+  min-height: 40vw;
+}
+
+.container-fluid{
+	background-color: #25EDFF;
+}
+.menu{
+  background-color: #FF40AE;
+}
+.pastel{
+  background-color: #CCB30A;
+}
+.cinza{
+  background-color: #E8DFC3;
+}
+.verde{
+  background-color: #00CC0E;
+}
+.footer-color{
+	background-color: black;
+}
+footer{
+	background-color: #4371E8;
+}
+
+.add-button {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+}
