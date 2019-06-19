@@ -6,7 +6,7 @@
   "background_color": "#25EDFF",
   "display": "fullscreen", 
   "Scope": "./",
-  "start_url": "./FPWA/index.html", 
+  "start_url": "/FPWA/index.html", 
   
   "icons": [
     {
