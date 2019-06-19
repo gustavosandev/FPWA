@@ -1,13 +1,13 @@
 {
   
-  "name": "FPWA",  
-  "short_name": "FPWA", 
-  "theme_color": "#25EDFF", 
+  "name": "FPWA",  // Nome do app  site que cria seu manifest.json   --> https:app-manifest.firebaseapp.com 
+  "short_name": "FPWA", //Nome do atalho
+  "theme_color": "#25EDFF", // cor do tema que abrange a barra de endereços
   "background_color": "#25EDFF",
   "display": "fullscreen", 
   "Scope": "./",
-  "start_url": "./FPWA/index.html", 
-  
+  "start_url": "./FPWA/index.html", //alguns artigos dizem que é opcional, identifica de onde
+  // está partindo a chamada, app ou site
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
